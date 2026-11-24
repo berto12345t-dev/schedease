@@ -1,0 +1,32 @@
+[project]
+name = "schedease-planner"
+version = "1.0.0"
+description = "Plan conflict-free class schedules with pinned subjects, blocked times, and ranked recommendations."
+requires-python = ">=3.12"
+authors = [
+    { name = "Andrew Roberto", email = "berto12345t@gmail.com" }
+]
+dependencies = [
+    "flet"
+]
+
+[dependency-groups]
+dev = [
+    "flet-cli",
+    "flet-desktop",
+    "flet-web"
+]
+
+[tool.flet.metadata]
+title = "SchedEase Planner"
+
+[tool.flet.android]
+legacy_packaging = true
+
+[tool.flet]
+org = "dev.flet"
+company = "Andrew Roberto"
+copyright = "Copyright (C) 2026 by Andrew Roberto"
+
+[tool.flet.app]
+path = "src"
